@@ -42,7 +42,7 @@
     # Testing ggplot output
 
 # load file
-data <- read.csv('ST131_100-200__fullgenes__ARGannot__results_min-cov-10_stats-input_summary.txt',header = TRUE)
+data <- read.csv(file.choose(), header=T, sep=',', row.names=1)
 summary(data)
 
 #loading libraries
